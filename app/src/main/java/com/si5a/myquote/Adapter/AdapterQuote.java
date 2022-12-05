@@ -34,7 +34,7 @@ public class AdapterQuote extends RecyclerView.Adapter<AdapterQuote.viewHolderQu
     @Override
     public void onBindViewHolder(@NonNull viewHolderQuote holder, int position) {
         QuoteModel QM = listQuote.get(position);
-        holder.tvText.setText(QM.getAuthor());
+        holder.tvText.setText(QM.getText());
         holder.tvAuthor.setText(QM.getAuthor());
     }
 
